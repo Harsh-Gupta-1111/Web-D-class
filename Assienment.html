@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assienment.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div>
+            <lable>Number 1:</lable>
+        <input type="text" id="num1">
+        </div>
+        <br>
+        <div>
+            <lable>Number 2:</lable>
+        <input type="text" id="num2">
+        </div>
+        <br>
+        <div>
+            <lable>Result:</lable>
+        <input type="text" id="res">
+        </div>
+        <br>
+        <button id="sum" onclick="add()">+</button>
+        <button id="minus" onclick="substraction()">-</button>
+        <button id="mul" onclick="multiply()">*</button>
+        <button id="divide" onclick="divide()">/</button>
+    </div>
+    <script >
+        function add()
+        {
+            console.log("Hello");
+        // document.getElementById("res").innerHTML = parseFloat(document.getElementById("num1").value)+parseFloat(document.getElementById("num2").value);
+            let a=parseFloat(document.getElementById('num1').value);
+            let b=parseFloat(document.getElementById('num2').value);
+            document.getElementById("res").value=a+b;
+        }
+        function substraction()
+        {
+            console.log("Hello");
+        // document.getElementById("res").innerHTML = parseFloat(document.getElementById("num1").value)+parseFloat(document.getElementById("num2").value);
+            let a=parseFloat(document.getElementById('num1').value);
+            let b=parseFloat(document.getElementById('num2').value);
+            document.getElementById("res").value=a-b;
+        }
+        function multiply()
+        {
+            console.log("Hello");
+        // document.getElementById("res").innerHTML = parseFloat(document.getElementById("num1").value)+parseFloat(document.getElementById("num2").value);
+            let a=parseFloat(document.getElementById('num1').value);
+            let b=parseFloat(document.getElementById('num2').value);
+            document.getElementById("res").value=a*b;
+        }
+        function divide()
+        {
+            console.log("Hello");
+        // document.getElementById("res").innerHTML = parseFloat(document.getElementById("num1").value)+parseFloat(document.getElementById("num2").value);
+            let a=parseFloat(document.getElementById('num1').value);
+            let b=parseFloat(document.getElementById('num2').value);
+            document.getElementById("res").value=a/b;
+        }
+    </script>
+</body>
+</html>
